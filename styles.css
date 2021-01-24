@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: rgb(106, 188, 254);
+  background: linear-gradient(
+    117deg,
+    rgba(106, 188, 254, 0.9920343137254902) 50%,
+    rgba(156, 218, 241, 1) 99%
+  );
+}
+
+.header {
+  text-align: center;
+  margin: 1em;
+  color: white;
+}
+
+.card {
+  margin: 2em auto auto;
+  -webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+  display: block;
+  transform: translateY(0px);
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+
+.hidden {
+  display: none;
+}
+
+#text > p {
+  margin: 1em;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -15%;
+    width: 100%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  }
+}
